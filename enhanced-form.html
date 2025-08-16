@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 page demonstrating lists, tables, media, and a fully structured, validated form.">
+    <meta name="keywords" content="HTML5, forms, validation, media, tables, lists, accessibility">
+    <meta name="author" content="Your Name">
+    <title>Enhanced HTML5 Content & Forms</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Enhanced HTML5 Content & Form Example</h1>
+        <p>This page demonstrates the use of lists, tables, media, and a structured HTML5 form with native validation.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#content">Content</a></li>
+            <li><a href="#form-section">Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Content Section -->
+        <section id="content">
+            <h2>Content Showcase</h2>
+
+            <!-- Lists -->
+            <article>
+                <h3>Our Services</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Accessibility Audits</li>
+                    <li>SEO Optimization</li>
+                </ul>
+
+                <h3>Steps to Get Started</h3>
+                <ol>
+                    <li>Sign up for an account</li>
+                    <li>Choose a service</li>
+                    <li>Submit your requirements</li>
+                </ol>
+            </article>
+
+            <!-- Tables -->
+            <article>
+                <h3>Pricing Table</h3>
+                <table border="1" cellspacing="0" cellpadding="5">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Basic Plan</th>
+                            <th>Premium Plan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Web Development</td>
+                            <td>$500</td>
+                            <td>$1200</td>
+                        </tr>
+                        <tr>
+                            <td>Accessibility Audit</td>
+                            <td>$200</td>
+                            <td>$500</td>
+                        </tr>
+                        <tr>
+                            <td>SEO Optimization</td>
+                            <td>$150</td>
+                            <td>$400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <!-- Media -->
+            <article>
+                <h3>Media Examples</h3>
+                <figure>
+                    <img src="https://via.placeholder.com/300" alt="Placeholder image for example">
+                    <figcaption>Example Image</figcaption>
+                </figure>
+
+                <figure>
+                    <audio controls>
+                        <source src="sample-audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <figcaption>Example Audio</figcaption>
+                </figure>
+
+                <figure>
+                    <video width="320" height="240" controls>
+                        <source src="sample-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Example Video</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <!-- Form Section -->
+        <section id="form-section">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="6"><br><br>
+                </fieldset>
+
+                <!-- Preferences -->
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <label for="service">Select a Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="web">Web Development</option>
+                        <option value="accessibility">Accessibility Audit</option>
+                        <option value="seo">SEO Optimization</option>
+                    </select><br><br>
+
+                    <label>Subscribe to Newsletter:</label>
+                    <input type="radio" id="subscribe-yes" name="subscribe" value="yes" required>
+                    <label for="subscribe-yes">Yes</label>
+                    <input type="radio" id="subscribe-no" name="subscribe" value="no">
+                    <label for="subscribe-no">No</label><br><br>
+
+                    <label>Interests:</label><br>
+                    <input type="checkbox" id="interest1" name="interests" value="tutorials">
+                    <label for="interest1">Tutorials</label>
+                    <input type="checkbox" id="interest2" name="interests" value="resources">
+                    <label for="interest2">Resources</label>
+                    <input type="checkbox" id="interest3" name="interests" value="consulting">
+                    <label for="interest3">Consulting</label><br><br>
+                </fieldset>
+
+                <!-- Additional Information -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" placeholder="Your message here..." required></textarea><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+
+                    <label for="website">Website (optional):</label>
+                    <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+                </fieldset>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
